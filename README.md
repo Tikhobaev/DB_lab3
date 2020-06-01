@@ -2,7 +2,7 @@
 1. Описание предметной области:
 * База данных фильмов и режиссёров из IMDB
 * 2 таблицы: films и producers
-* films имеет поля: id, title, name, producer_id
-* producers имеет поля: id, name, birth_date, address
+* films имеет поля: id (перв.ключ), title (индекс), name, producer_id
+* producers имеет поля: id(перв.ключ), name(индекс), birth_date, address, film_number (из таблицы films, заполняется только триггером)
 * id режиссёров и фильмов - из IMDB
 * бд находится в 3 нормальной форме потому что каждый неключевой атрибут представляет информацию о ключе и ни о чём кроме ключа
